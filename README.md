@@ -1,5 +1,6 @@
+## This GitHub repository has PyTorch code implementation sof both SVG-LP and FutureGAN.
 # Stochastic Video Generation with a Learned Prior for anomaly detection
-This is code from the paper [Stochastic Video Generation with a Learned Prior](https://arxiv.org/abs/1802.07687) by Emily Denton and Rob Fergus. See the [project page](https://sites.google.com/view/svglp/) for details and generated video sequences. It is further updated for our task of anomaly detection for SM-MNIST dataset.
+This is code from the paper [Stochastic Video Generation with a Learned Prior](https://arxiv.org/abs/1802.07687) by Emily Denton and Rob Fergus. It is further updated for our task of anomaly detection for SM-MNIST dataset.
 
 ##  Training on Stochastic Moving MNIST (SM-MNIST)
 To train the SVG-LP model on the 2 digit SM-MNIST dataset run: 
@@ -15,23 +16,13 @@ python generate_svg_lp.py --model_path --log_dir /generated/images/will/save/her
 
 ```
 
-#FutureGAN: PyTorch Implemetation
+# FutureGAN: PyTorch Implemetation
 
 This is the official PyTorch implementation of FutureGAN. The code accompanies the paper ["FutureGAN: Anticipating the Future Frames of Video Sequences using Spatio-Temporal 3d Convolutions in Progressively Growing GANs"](https://arxiv.org/abs/1810.01325).
 
-## Code Usage
-__Requirements__<br>
-
-Firts make sure to have CUDA9.0 + CUDNN7 installed.<br>
-Then, install Anaconda3 and create and activate the FutureGAN-conda environment:
-
-~~~
-$ conda env create -f FutureGAN_env.yml
-$ source activate FutureGAN
 ~~~
 __Train the Network__<br>
 
-To train the networks with default settings, use the `--data_root` flag to specify the path to your training data and simply run:
 ~~~~
 $ python train.py --data_root='<path/to/trainsplit/of/your/dataset>'
 ~~~~
