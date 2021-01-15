@@ -1,6 +1,7 @@
 ## This GitHub repository has PyTorch code implementation sof both SVG-LP and FutureGAN.
 # Stochastic Video Generation with a Learned Prior for anomaly detection
 This is code from the paper [Stochastic Video Generation with a Learned Prior](https://arxiv.org/abs/1802.07687) by Emily Denton and Rob Fergus. It is further updated for our task of anomaly detection for SM-MNIST dataset.
+### Link to original SVG-LP github repository: https://github.com/edenton/svg
 
 ##  Training on Stochastic Moving MNIST (SM-MNIST)
 To train the SVG-LP model on the 2 digit SM-MNIST dataset run: 
@@ -15,11 +16,12 @@ To generate images with a pretrained SVG-LP model run:
 python generate_svg_lp.py --model_path --log_dir /generated/images/will/save/here/
 
 ```
+### Changes made to the original code is mainly made in "data/moving_mnist.py" where anomaly is introduced only during testing. Also, "train_svg_lp.py" file is little modified to get the output
 
 # FutureGAN: PyTorch Implemetation
 
 This is the official PyTorch implementation of FutureGAN. The code accompanies the paper ["FutureGAN: Anticipating the Future Frames of Video Sequences using Spatio-Temporal 3d Convolutions in Progressively Growing GANs"](https://arxiv.org/abs/1810.01325).
-
+### Link to original FutureGAN github repository: https://github.com/TUM-LMF/FutureGAN. This original code is modified to generate the future frame sequences.
 ~~~
 __Train the Network__<br>
 
